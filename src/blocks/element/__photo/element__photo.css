@@ -1,0 +1,11 @@
+.element__photo{
+  width: 282px;
+  height: 282px;
+  display: block;
+}
+
+.element__photo:hover {
+  opacity: .3;
+  transition: .4s linear;
+  cursor: pointer;
+}

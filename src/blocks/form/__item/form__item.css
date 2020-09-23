@@ -1,0 +1,31 @@
+@import url('_description/form__item_description.css');
+@import url('_avatar-link/form__item_avatar-link.css');
+@import url('_name/form__item_name.css');
+@import url('_place/form__item_place.css');
+@import url('_place-link/form__item_place-link.css');
+@import url('_type/form__item_type_error.css');
+
+.form__item {
+  border: 0;
+  width: 358px;
+  height: 28px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bcbcc4;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 17px;
+}
+
+
+
+@media screen and (max-width: 599px){
+  .form__item {
+    width: 200px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+

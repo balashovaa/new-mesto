@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mesto</title>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <a href="#" class="header__logo-link" target="_blank">
+      <img class="header__logo" src="images/logo.svg" alt="Логотип Mesto">
+    </a>
+  </header>
+  <main>
+    <section class="profile">
+      <div class="profile__card">
+        <div class="profile__avatar">
+          <img class="profile__photo" src="#" alt="фото профиля">
+          <button class="profile__avatar-edit"></button>
+        </div>
+        <div class="profile__info">
+          <div class="profile__wrapper">
+            <h1 class="profile__name"></h1>
+            <button class="profile__button-edit" type="button"></button>
+          </div>
+          <p class="profile__description"></p>
+        </div>
+      </div>
+      <button class="profile__add-photo" type="button"></button>
+    </section>
+    <section class="elements">
+      <ul class="element__cards">
+        <li class="element element_template">
+          <img class="element__photo" src="#" alt="">
+          <button class="element__delete-button"></button>
+          <div class="element__info">
+            <h2 class="element__title"></h2>
+            <button class="element__like" type="button"><span class="element__likes-number">0</span></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
+  </footer>
+</div>
+<div class="popup popup__profile">
+  <div class="popup__container">
+    <button class="popup__button-close"></button>
+    <form class="form form__save-profile" name="popupForm" autocomplete="off" novalidate>
+      <h2 class="form__title">Редактировать профиль</h2>
+      <input id="profile-name-input" type="text" class="form__item form__item_name" name="name"
+             placeholder="Имя и Фамилия" required
+             minlength="2" maxlength="40">
+      <span id="profile-name-input-error" class="form__item-error"></span>
+      <input id="profile-description-input" type="text" class="form__item form__item_description" name="description"
+             placeholder="Описание" required minlength="2" maxlength="200">
+      <span id="profile-description-input-error" class="form__item-error"></span>
+      <button type="submit" class="form__button-save">Сохранить</button>
+    </form>
+  </div>
+</div>
+<div class="popup popup__photo">
+  <div class="popup__container">
+    <button class="popup__button-close popup__button-close_photo"></button>
+    <form class="form form__save_photo" name="popupForm" autocomplete="off">
+      <h2 class="form__title">Новое место</h2>
+      <input id="place-input" type="text" class="form__item form__item_place" name="place" placeholder="Название"
+             required
+             minlength="1" maxlength="30">
+      <span id="place-input-error" class="form__item-error"></span>
+      <input id="place-link-input" type="url" class="form__item form__item_place-link" name="place-link"
+             placeholder="Ссылка на картинку" required>
+      <span id="place-link-input-error" class="form__item-error"></span>
+      <button type="submit" class="form__button-save">Создать</button>
+    </form>
+  </div>
+</div>
+<div class="popup popup__photo-card">
+  <div class="popup__container">
+    <button class="popup__button-close popup__button-close_image"></button>
+    <img class="popup__image" src="#" alt="">
+    <p class="popup__image-description"></p>
+  </div>
+</div>
+
+<div class="popup popup__avatar">
+  <div class="popup__container">
+    <button class="popup__button-close"></button>
+    <form class="form form__save-avatar" name="popupAvatar" autocomplete="off" novalidate>
+      <h2 class="form__title">Обновить аватар</h2>
+      <input id="avatar-link-input" type="url" class="form__item form__item_avatar-link" name="avatar-link"
+             placeholder="Ссылка на изображение" required>
+      <span id="avatar-link-input-error" class="form__item-error"></span>
+      <button type="submit" class="form__button-save">Сохранить</button>
+    </form>
+  </div>
+</div>
+
+<div class="popup popup__confirm-delete">
+  <div class="popup__container">
+    <button class="popup__button-close"></button>
+    <form class="form">
+      <h2 class="form__title">Вы уверены?</h2>
+      <button type="submit" class="form__button-save">Да</button>
+    </form>
+  </div>
+</div>
+</body>
+

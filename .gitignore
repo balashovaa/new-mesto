@@ -1,0 +1,7 @@
+# phpstorm project files
+.idea
+
+# npm vendor dir
+node_modules
+package-lock.json
+dist

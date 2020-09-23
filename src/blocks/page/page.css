@@ -1,0 +1,6 @@
+.page {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+}

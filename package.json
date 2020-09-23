@@ -1,0 +1,42 @@
+{
+  "name": "mesto",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.html",
+  "directories": {},
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "dev": "webpack-dev-server --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balashovaa/mesto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balashovaa/mesto/issues"
+  },
+  "homepage": "https://github.com/balashovaa/mesto",
+  "dependencies": {
+    "core-js": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/preset-env": "latest",
+    "autoprefixer": "latest",
+    "babel-loader": "latest",
+    "css-loader": "latest",
+    "cssnano": "latest",
+    "file-loader": "latest",
+    "html-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "mini-css-extract-plugin": "latest",
+    "postcss-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}

@@ -1,0 +1,32 @@
+.profile__add-photo{
+  width: 150px;
+  height: 50px;
+  padding: 0;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-image: url("../../../images/addButton.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: black;
+  align-self: center;
+}
+
+.profile__add-photo:hover {
+  opacity: .4;
+  transition: .4s linear;
+}
+
+@media screen and (max-width: 899px) and (min-width: 600px) {
+  .profile__add-photo {
+    width: 75px;
+  }
+}
+
+
+@media screen and (max-width: 599px){
+  .profile__add-photo {
+    width: 282px;
+  }
+}

@@ -1,0 +1,19 @@
+@import url('__photo/element__photo.css');
+@import url('__info/element__info.css');
+@import url('__title/element__title.css');
+@import url('__like/element__like.css');
+@import url('__like/_status/element__like_status_added.css');
+@import url('__cards/element__cards.css');
+@import url('_template/element_template.css');
+@import url('__delete-button/element__delete-button.css');
+@import url('__likes-number/.element__likes-number.css');
+@import url('__delete-button/_deletable/element__delete-button_deletable.css');
+
+.element{
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  height: 361px;
+  overflow: hidden;
+  position: relative;
+}

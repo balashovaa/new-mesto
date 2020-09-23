@@ -1,0 +1,23 @@
+@import url('__item/form__item.css');
+@import url('__item-error/form__item-error.css');
+@import url('__title/form__title.css');
+@import url('__button-save/form__button-save.css');
+@import url('__button-save/_disabled/form__button-save_disabled.css');
+
+.form{
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  padding: 36px;
+}
+
+@media screen and (max-width: 599px){
+  .form {
+    width: 200px;
+  }
+}
+
